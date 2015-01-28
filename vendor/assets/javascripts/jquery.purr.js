@@ -50,16 +50,6 @@
 
     function notify ()
     {
-      // Set up the close button
-      var close = document.createElement('a');
-      close.className = "close";
-      jQuery(close).attr({
-          href: '#close'
-          }).appendTo(notice).click(function() {
-              removeNotice();
-              return false;
-          });
-
       // If ESC is pressed remove notice
       jQuery(document).keyup(function(e) {
         if (e.keyCode === 27) {
